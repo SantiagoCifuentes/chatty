@@ -58,14 +58,14 @@ return(
     {error  && <p>{error}</p> }
     <form onSubmit={handleSubmit}>
         <label htmlFor="email">Email</label>
-        <input type="email" name = "email"placeholder="youremail@company.com" onChange={handleChange}/>
+        <input  className="p-2 bd-highlight " type="email" name = "email"placeholder="youremail@company.com" onChange={handleChange}/>
         <label htmlFor="password">Password</label>
-        <input type="password" name="password" onChange={handleChange}/>
+        <input className="p-2 bd-highlight " type="password" name="password" onChange={handleChange}/>
 
         <button>Login</button>
     </form>
-    <button onClick={handleGoogleSignin}>Inicia sesión con Google</button>
-    <button onClick={handleGitHubSignin}>Inicia sesión con GitHub</button>
+    <button className="btn btn-secondary" onClick={handleGoogleSignin}>Inicia sesión con Google</button>
+    <button  className="btn btn-secondary" onClick={handleGitHubSignin}>Inicia sesión con GitHub</button>
     </div>
 )
 }

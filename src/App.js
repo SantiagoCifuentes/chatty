@@ -3,7 +3,7 @@ import { AuthProvider } from './context/authContext'
 import Chat from './pages/Chat';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
-
+import PrivateRoute from './routes/PrivateRoute';
 
 
 function App() {
