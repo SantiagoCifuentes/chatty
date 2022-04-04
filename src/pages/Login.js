@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useAuth } from "../context/authContext"
 import { Link, useNavigate } from "react-router-dom";
 
-export function Login() {
+export default function Login() {
   const[user,setUser]= useState({
     email:'',
     password: ''
@@ -29,6 +29,7 @@ try {
   console.log(err);
 }
 };
+
 const handleSubmit= async (e)=>{
     e.preventDefault()
     try {
@@ -64,7 +65,7 @@ return(
         <button>Login</button>
     </form>
     <button onClick={handleGoogleSignin}>Inicia sesión con Google</button>
-    <button onClick={handleGitHubSignin}>Inicia sesión con Google</button>
+    <button onClick={handleGitHubSignin}>Inicia sesión con GitHub</button>
     </div>
 )
 }
